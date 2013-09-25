@@ -32,6 +32,12 @@ if has("gui_running")
   endif
 endif
 
+" WinManager
+let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList"
+map <c-w><c-f> :FirstExplorerWindow<cr>
+map <c-w><c-b> :BottomExplorerWindow<cr> 
+map <c-w><c-t> :WMToggle<cr>
+
 " tab
 nmap <F8>  :tabnew<CR>
 nmap <F9>  :tabp<CR>
