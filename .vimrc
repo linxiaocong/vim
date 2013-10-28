@@ -1,4 +1,4 @@
-color solarized
+color default
 
 syntax on
 syntax enable
@@ -38,12 +38,21 @@ map <c-w><c-f> :FirstExplorerWindow<cr>
 map <c-w><c-b> :BottomExplorerWindow<cr> 
 map <c-w><c-t> :WMToggle<cr>
 
+" miniBufExplorer
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+let g:miniBufExplSplitToEdge=0
+let g:miniBufExplSplitBelow=0
+
 " tab
-nmap <F8>  :tabnew<CR>
-nmap <F9>  :tabp<CR>
-nmap <F10> :tabn<CR>
+"nmap <F8>  :tabnew<CR>
+"nmap <F9>  :tabp<CR>
+"nmap <F10> :tabn<CR>
+nmap <F9> :MBEbp<CR>
+nmap <F10> :MBEbn<CR>
 
 " session
 nmap <F5> :mksession! ~/session.vim<CR>
 nmap <F6> :source     ~/session.vim<CR>
-
