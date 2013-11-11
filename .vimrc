@@ -1,4 +1,4 @@
-color default
+color solarized
 
 syntax on
 syntax enable
@@ -15,7 +15,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set backspace=indent,eol,start
-set background=light
+set background=dark
 
 " gVim
 if has("gui_running")
@@ -26,9 +26,9 @@ if has("gui_running")
   set guioptions-=b
   set columns=160 lines=50
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 12
+    set guifont=Liberation\ Mono\ 10
   elseif has("gui_win32")
-    set guifont=Consolas:h10:cANSI
+    set guifont=Liberation\ Mono:h10:cANSI
   endif
 endif
 
@@ -39,12 +39,16 @@ map <c-w><c-b> :BottomExplorerWindow<cr>
 map <c-w><c-t> :WMToggle<cr>
 
 " miniBufExplorer
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
+let g:miniBufExplMapWindowNavVim=1
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapCTabSwitchBufs=1
+let g:miniBufExplModSelTarget=1
 let g:miniBufExplSplitToEdge=0
 let g:miniBufExplSplitBelow=0
+
+" taglist
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
 
 " tab
 "nmap <F8>  :tabnew<CR>
