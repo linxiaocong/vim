@@ -1,4 +1,4 @@
-color solarized
+color desert
 
 syntax on
 syntax enable
