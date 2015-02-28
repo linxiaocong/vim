@@ -16,12 +16,15 @@ set softtabstop=4
 set shiftwidth=4
 set backspace=indent,eol,start
 set background=dark
+set fileencodings=utf-8,gbk
+set termencoding=gbk
 
 " gVim
 if has("gui_running")
   set guioptions-=m
   set guioptions-=T
   set guioptions-=l
+  set guioptions-=L
   set guioptions-=r
   set guioptions-=b
   set columns=160 lines=50
@@ -33,7 +36,7 @@ if has("gui_running")
 endif
 
 " WinManager
-let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList"
+let g:winManagerWindowLayout = "FileExplorer|TagList"
 map <c-w><c-f> :FirstExplorerWindow<cr>
 map <c-w><c-b> :BottomExplorerWindow<cr> 
 map <c-w><c-t> :WMToggle<cr>
@@ -51,12 +54,12 @@ let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 
 " tab
-"nmap <F8>  :tabnew<CR>
-"nmap <F9>  :tabp<CR>
-"nmap <F10> :tabn<CR>
+" nmap <F8>  :tabnew<CR>
+" nmap <F9>  :tabp<CR>
+" nmap <F10> :tabn<CR>
 nmap <F9> :MBEbp<CR>
 nmap <F10> :MBEbn<CR>
 
 " session
-nmap <F5> :mksession! ~/session.vim<CR>
-nmap <F6> :source     ~/session.vim<CR>
+" nmap <F5> :mksession! ~/session.vim<CR>
+" nmap <F6> :source     ~/session.vim<CR>
