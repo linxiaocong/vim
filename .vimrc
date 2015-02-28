@@ -27,7 +27,6 @@ if has("gui_running")
   set guioptions-=L
   set guioptions-=r
   set guioptions-=b
-  set columns=160 lines=50
   if has("gui_gtk2")
     set guifont=Liberation\ Mono\ 10
   elseif has("gui_win32")
@@ -52,14 +51,5 @@ let g:miniBufExplSplitBelow=0
 " taglist
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
-
-" tab
-" nmap <F8>  :tabnew<CR>
-" nmap <F9>  :tabp<CR>
-" nmap <F10> :tabn<CR>
 nmap <F9> :MBEbp<CR>
 nmap <F10> :MBEbn<CR>
-
-" session
-" nmap <F5> :mksession! ~/session.vim<CR>
-" nmap <F6> :source     ~/session.vim<CR>
