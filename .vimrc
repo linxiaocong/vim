@@ -17,7 +17,6 @@ set shiftwidth=4
 set backspace=indent,eol,start
 set background=dark
 set fileencodings=utf-8,gbk
-set termencoding=gbk
 
 " gVim
 if has("gui_running")
