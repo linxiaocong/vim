@@ -17,6 +17,7 @@ set shiftwidth=4
 set backspace=indent,eol,start
 set background=dark
 set fileencodings=utf-8,gbk
+let $LANG='en'
 
 " gVim
 if has("gui_running")
@@ -26,6 +27,7 @@ if has("gui_running")
   set guioptions-=L
   set guioptions-=r
   set guioptions-=b
+  set langmenu=en
   if has("gui_gtk2")
     set guifont=Liberation\ Mono\ 10
   elseif has("gui_win32")
