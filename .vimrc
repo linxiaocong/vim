@@ -29,9 +29,10 @@ if has("gui_running")
   set guioptions-=b
   set langmenu=en
   if has("gui_gtk2")
-    set guifont=Liberation\ Mono\ 10
+    set guifont=Source\ Code\ Pro\ Black\ 10
   elseif has("gui_win32")
-    set guifont=Liberation\ Mono:h10:cANSI
+    set guifont=Source\ Code\ Pro\ Black:h10:cANSI
+    au GUIEnter * simalt ~x
   endif
 endif
 
