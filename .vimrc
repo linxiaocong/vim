@@ -5,7 +5,9 @@ syntax enable
 filetype plugin indent on
 
 set nocompatible
+set nowrap
 set nu
+set numberwidth=5
 set showmatch
 set cindent
 set autoindent
