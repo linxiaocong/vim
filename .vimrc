@@ -58,12 +58,6 @@ set hlsearch
 " the height of cmd bar
 set cmdheight=1
 
-" a buffer becomes hidden when it is abandoned
-set hid
-
-" remember info about open buffers on close
-set viminfo^=%
-
 " don't redraw while executing macros
 set lazyredraw
 
