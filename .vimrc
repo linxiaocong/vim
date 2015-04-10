@@ -1,26 +1,75 @@
-color desert
+" set the language of Vim
+let $LANG='en'
 
+" syntax and color scheme
+color Tomorrow-Night
 syntax on
 syntax enable
-filetype plugin indent on
+set background=dark
 
+" file encodings
+set fileencodings=utf-8,gbk
+
+" use unix as the standard file type
+set ffs=unix,dos,mac
+
+" not compatiable with vi
 set nocompatible
-set nowrap
-set nu
-set numberwidth=5
-set showmatch
+
+" set auto indent
 set cindent
 set autoindent
 set smartindent
+filetype plugin indent on
+
+" set tab
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
+" backspace should act as it should be
 set backspace=indent,eol,start
+
+" turn autobackup off
+set nobackup
+set nowb
+set noswapfile
+
+" auto reload a file is changed from the outside
+set autoread
+
+" wrap long lines
+set wrap
+
+" display line numbers
+set nu
+set numberwidth=5
+
+" always show current position
+set ruler
+
+" show matches
+set showmatch
+
+" hight light search results
 set hlsearch
-set background=dark
-set fileencodings=utf-8,gbk
-let $LANG='en'
+
+" the height of cmd bar
+set cmdheight=1
+
+" a buffer becomes hidden when it is abandoned
+set hid
+
+" remember info about open buffers on close
+set viminfo^=%
+
+" don't redraw while executing macros
+set lazyredraw
+
+" no annoying sound on errors
+set noerrorbells
+set novisualbell
 
 " gVim
 if has("gui_running")
@@ -30,13 +79,13 @@ if has("gui_running")
   set guioptions-=L
   set guioptions-=r
   set guioptions-=b
-  set langmenu=en
   if has("gui_gtk2")
     set guifont=Source\ Code\ Pro\ Black\ 10
   elseif has("gui_win32")
     set guifont=Source\ Code\ Pro\ Black:h10:cANSI
-    au GUIEnter * simalt ~x
   endif
+  set langmenu=en
+  au GUIEnter * simalt ~x
 endif
 
 " WinManager
